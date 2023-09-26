@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>양식 데이터 전송하기</title>
+</head>
+<body>
+    <h1>양식 데이터 전송하기</h1>
+    <form method="post" action="result.html">
+        <div>
+            이름
+            <input type="text" name="user name">
+        </div>
+        <div>
+            나이
+            <input type="number" name="age">
+        </div>
+        <div>
+            성별
+            <input type="radio" name="gender" value="man">남
+            <input type="radio" name="gender" value="woman">여
+        </div>
+        <div>
+            취미
+            <input type="checkbox" name="hobby" value="read">독서
+            <input type="checkbox" name="hobby" value="exercise">운동
+            <input type="checkbox" name="hobby" value="coding">코딩
+        </div>
+        <div>
+            출신지
+            <select name="city">
+                <option>서울</option>
+                <option>부산</option>
+                <option>대구</option>
+                <option>경남</option>
+                <option>제주</option>
+            </select>
+        </div>
+        <div>
+            주소
+            <input type="text" size="40" name="address">
+        </div>
+        <div>
+            자기소개
+            <textarea name="profile"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="전송하기">
+            <input type="reset" value="모두 지우기">
+        </div>
+    </form>
+</body>
+</html>
